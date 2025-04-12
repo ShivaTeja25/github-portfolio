@@ -1,41 +1,66 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #eaf6ff;
+    color: #222;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #24292e;
-    color: #fff;
+    background-color: #d4ecff;
     padding: 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .title-section {
     text-align: center;
   }
   
-  header .resume-button {
-    display: inline-block;
-    margin-top: 10px;
+  .resume-section {
+    margin-top: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .resume-section {
+      margin-top: 0;
+    }
+  }
+  
+  .resume-button {
+    background-color: #4da8da;
+    color: white;
     padding: 10px 20px;
-    background: #28a745;
-    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    border: none;
+    display: inline-block;
   }
   
-  header .resume-button:hover {
-    background: #218838;
+  .resume-button:hover {
+    background-color: #357ab8;
   }
   
   nav {
-    background-color: #0366d6;
+    background-color: #a0d2f0;
     padding: 10px;
     text-align: center;
   }
   
   nav a {
-    color: #fff;
+    color: #034078;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
@@ -46,7 +71,7 @@ body {
   }
   
   section {
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -58,8 +83,8 @@ body {
   }
   
   footer {
-    background-color: #24292e;
-    color: #fff;
+    background-color: #d4ecff;
+    color: #034078;
     text-align: center;
     padding: 10px;
   }
